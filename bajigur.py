@@ -6,12 +6,8 @@ from flask_marshmallow import Marshmallow
 # Creating Flask Application
 app = Flask(__name__)
 
-# Connecting MYSQL Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:''@localhost/restapi'
-
-# track modifications of objects and emit signals, 
-# This requires extra memory and should be disabled if not needed.
-# So disabling using config
+# Connecting MYSQL Database BajigurCloth
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:''@localhost/BajigurCloth'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initiating SQLAlchemy and Marshmallow objects
@@ -321,15 +317,6 @@ def delete_order(id):
   db.session.delete(order)
   db.session.commit()
   return order_schema.jsonify(order)
-
-# Cek API TOKO
-@app.route('/', methods=['GET'])
-def index():
-    return jsonify({'message': 'ini adalah backend system toko Bajigur Cloth'})
-
-# It will run flask Application
-if __name__ == "__main__":
-    app.run(debug=True)
 
 # Cek API TOKO
 @app.route('/', methods=['GET'])
