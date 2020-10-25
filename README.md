@@ -1,10 +1,10 @@
 # Bajigur BackEnd API Proses
 
 Ini adalah proses dasar BackEnd untuk toko bajigur cloth yang berisi :
-User        -> untuk menyimpan data customer
-Product     -> untuk menyimpan data detail product
-Inventory   -> untuk menyimpan data inventory
-Order       -> untuk menyimpan data pemesanan yang dilakukan oleh user
+- User        -> untuk menyimpan data customer
+- Product     -> untuk menyimpan data detail product
+- Inventory   -> untuk menyimpan data inventory
+- Order       -> untuk menyimpan data pemesanan yang dilakukan oleh user
 
 # Installation
 
