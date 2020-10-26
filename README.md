@@ -16,6 +16,14 @@ Buat database BajigurCloth
 - GET http://localhost:5000/
 
 ## User
+- Model request body json
+```
+{
+"nama":"Budi Santoso",
+"phone":"0274 3788998",
+"alamat":"Jalan Gendu 09, Yogyakarta"
+}
+```
 - POST http://localhost:5000/user
 - GET http://localhost:5000/user
 - GET http://localhost:5000/user/<id>
@@ -23,6 +31,17 @@ Buat database BajigurCloth
 - DELETE http://localhost:5000/user/<id>
 
 ## Product
+- Model request body json
+```
+{
+      "bahan": "Combed Cotton 65S", 
+      "harga": 75000, 
+      "kodeSKU": "TS09090", 
+      "namabarang": "Kaos Jetmen", 
+      "ukuran": "Large", 
+      "warna": "Biru Laut"
+    }
+```    
 - POST http://localhost:5000/product
 - GET http://localhost:5000/product
 - GET http://localhost:5000/product/<id>
@@ -30,6 +49,16 @@ Buat database BajigurCloth
 - DELETE http://localhost:5000/product/<id>
 
 ## Inventory
+- Model request body json
+```
+{
+  "kodeSKU" : "SH0909",
+  "tanggalmasuk" : "2020-10-26 12:00:00",
+  "tanggalupdate" : "2020-10-26 12:00:00",
+  "stock" : 10,
+  "lokasi" : "B-10"
+}
+```
 - POST http://localhost:5000/inventory
 - GET http://localhost:5000/inventory
 - GET http://localhost:5000/inventory/<id>
@@ -37,6 +66,15 @@ Buat database BajigurCloth
 - DELETE http://localhost:5000/inventory/<id>
 
 ## Order
+- Model request Body json
+```
+{
+  "userID" : 2,
+  "tanggalorder" : "2020-10-26 13:09:34",
+  "amount" : 700000,
+  "status" : "Lunas"
+}
+```
 - POST http://localhost:5000/order
 - GET http://localhost:5000/order
 - GET http://localhost:5000/order/<id>
