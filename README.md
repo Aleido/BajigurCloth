@@ -6,6 +6,7 @@ Ini adalah proses dasar BackEnd untuk toko bajigur cloth yang berisi :
 - Inventory   -> untuk menyimpan data inventory
 - Order       -> untuk menyimpan data pemesanan yang dilakukan oleh user
 
+System dibangun dengan Python menggunakan library Flask, SQLAlchemy dan Marshmallow
 # Installation
 
 - ```pip install requirements.txt```
