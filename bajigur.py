@@ -172,7 +172,7 @@ def update_product(id):
   product = Product.query.get(id)
 
   kodeSKU = request.json['kodeSKU'] 
-  namaBarang = request.json['namaBarang'] 
+  namabarang = request.json['namabarang'] 
   bahan = request.json['bahan'] 
   warna = request.json['warna'] 
   ukuran = request.json['ukuran'] 
@@ -262,7 +262,7 @@ def delete_inventory(id):
 #========================= ORDER
 class OrderSchema(ma.Schema):
     class Meta:
-        fields = ('id', 'userID', 'tanggalOrder', 'amount', 'status' )
+        fields = ('id', 'userID', 'tanggalorder', 'amount', 'status' )
 
 order_schema = OrderSchema()
 orders_schema = OrderSchema(many=True)
